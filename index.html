@@ -52,7 +52,7 @@
             <div class=" container-out">
                 <div class="inside">
                 <h1 class="main-headline">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-                <button class="modal-button" type="button">Zamów usługę</button>
+                <button class="modal-button" type="button" data-modal-open>Zamów usługę</button>
             </div>
             </div>
         </section>
@@ -356,14 +356,15 @@
     </footer>
     <div class="backdrop is-hidden"data-modal>
         <div class="modal">
-            <button type="button" class="close-btn"> 
-            <svg class="icon-close">
+            <button type="button" class="close-btn" data-modal-close> 
+            <svg width="30px" height="30px"class="icon-close">
                 <use href="./images/sprite.svg#icon-close"></use>
-            </svg>data-modal-close></button>
+            </svg></button>
                 
         </div>
 
     </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

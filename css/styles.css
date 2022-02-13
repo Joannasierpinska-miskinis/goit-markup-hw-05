@@ -524,6 +524,42 @@ padding-bottom: 60px;
 
 /*######### END FOOTER ########### */
 
+/* ############ BACKDROP ###########*/
+.backdrop{
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100vh;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 581px;
+    width: 528px;
+    border-radius: 4px;
+    background: #FFFFFF;
+}
+.close-btn{
+    position: absolute;
+    right: 8px;;
+    top: 8px;;
+    background-color: #FFFFFF;
+    
+    cursor:pointer;
+
+}
+.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* ############ END BACKDROP ###########*/
+
 /* ############# PORTFOLIO ############*/
 
 .header {
