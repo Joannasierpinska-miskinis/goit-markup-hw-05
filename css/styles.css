@@ -715,18 +715,19 @@ position: absolute;
 height: 294px;
 width: 370px;
 font-family: Roboto;
-font-style: normal;
-font-weight: normal;
 font-size: 18px;
 line-height: 1.55;
 letter-spacing: 0.03em;
 color: #FFFFFF;
-text-align: center;
+display: flex;
+align-items: center;
+padding-left: 24px;
 width: 100%;
 left: 0;
 top: 0;
 background: rgba(33, 150, 243, 0.9);
 }
+
 
 
 
