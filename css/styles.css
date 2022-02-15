@@ -650,6 +650,7 @@ padding-bottom: 60px;
 }
 .btn-nav:hover {
     color: #FFFFFF;
+    transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--main-color);
     box-shadow:0 0 11px rgba(33,33,33,.2);  
     cursor: pointer;
@@ -671,13 +672,13 @@ padding-bottom: 60px;
 }
 
 .portfolio-list-item{
-    height: 404px;
     width: 370px;
     border: 1px solid #EEEEEE;
     margin-left: 30px;
     margin-top: 30px; 
     flex-basis: calc (100% / 3 - 30px);
     align-items: center;
+    
 }
 .portfolio-list-item:hover{
 box-shadow:0 0 11px rgba(33,33,33,.2);
@@ -709,11 +710,22 @@ cursor: pointer;
 
 .portfolio-list-item{
 position: relative;
+overflow: hidden;
+}
+.portfolio-list-item:hover .overlay{
+    transform:translateY(0)
 }
 .overlay{
 position: absolute;
+width: 100%;
+left: 0;
+top:0;
+background: rgba(33, 150, 243, 0.9);
+transform: translateY(-100%);
+transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.overlay >p{
 height: 294px;
-width: 370px;
 font-family: Roboto;
 font-size: 18px;
 line-height: 1.55;
@@ -721,13 +733,8 @@ letter-spacing: 0.03em;
 color: #FFFFFF;
 display: flex;
 align-items: center;
-padding-left: 24px;
-width: 100%;
-left: 0;
-top: 0;
-background: rgba(33, 150, 243, 0.9);
+padding-left: 24px; 
 }
-
 
 
 
