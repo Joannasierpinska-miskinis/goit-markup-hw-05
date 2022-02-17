@@ -125,7 +125,7 @@ img{
 .navigation-list-item{
     position: relative;
 }
-.navigation-list-link:active::after{
+.is-active::after{
     content: "";
     display: block;
     height: 4px;
