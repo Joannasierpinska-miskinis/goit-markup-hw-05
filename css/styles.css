@@ -700,6 +700,7 @@ svg{
 .portfolio-list-item:hover{
     box-shadow:0 0 11px rgba(33,33,33,.2);
     cursor: pointer;
+
 }
 .project-headline {
     font-family: Roboto;
@@ -730,9 +731,11 @@ svg{
     position: relative;
     overflow: hidden;
 }
-.overlay-container:hover .overlay{
-    transform:translateY(0)
-}
+
+ .overlay-container:hover.overlay{
+    transform:translateY(0);
+}   
+
 .overlay{
     position: absolute;
     width: 100%;
